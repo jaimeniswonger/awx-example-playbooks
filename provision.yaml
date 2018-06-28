@@ -1,9 +1,9 @@
 ---
-- name: Example Playbook
+- name: Say Hello
   hosts: all
   remote_user: centos
   gather_facts: no
   tasks:
-
-  - name: Say Hello
-    action: command echo 'Hello!'
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
